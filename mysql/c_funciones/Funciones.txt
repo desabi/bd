@@ -1,0 +1,12 @@
+----------------------------------------------------------------
+ Las funciones pueden utilizarse basicamente de 2 maneras:
+  1. De manera directa
+  2. Utilizando las columnas (datos) de una tabla.
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+ Existen 3 tipos de funciones basicas:
+  1. Texto
+  2. Numero
+  3. Fechas
+----------------------------------------------------------------

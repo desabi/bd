@@ -1,0 +1,17 @@
+ 
+ ALTER TABLE tabla CHANGE ColumnaVieja ColumnaNueva TipoDeDato NOT NULL;
+
+ ALTER TABLE tabla ADD ColumnaNueva TipoDeDato;
+
+ ALTER TABLE tabla DROP columna;
+
+ ALTER TABLE tabla RENAME nuevoNombre;
+
+-------------------------------------------------------------------
+
+ ALTER TABLE contacts ADD email VARCHAR(60);
+
+ AFTER -> Después
+ ALTER TABLE contacts ADD email VARCHAR(60) AFTER name;
+
+ ALTER TABLE contacts ADD email VARCHAR(60) FIRST;

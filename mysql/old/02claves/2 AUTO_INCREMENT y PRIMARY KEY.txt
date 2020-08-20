@@ -1,0 +1,44 @@
+--------------------------------------------------
+AUTO_INCREMENT
+--------------------------------------------------
+
+mysql> CREATE TABLE usuario(
+    -> idusuario INT NOT NULL AUTO_INCREMENT,
+    -> nombre VARCHAR(50) NOT NULL,
+    -> apellidos VARCHAR(50) NOT NULL,
+    -> edad INT NOT NULL,
+    -> telefono BIGINT NOT NULL
+    -> );
+
+ERROR 1075 (42000): Incorrect table definition; there can be only one auto column and it must be defined as a key
+
+* Se debe definir idusuario como clave primaria
+
+
+--------------------------------------------------
+PRIMARY KEY
+--------------------------------------------------
+
+Entonces, la nueva tabla se crea de la manera siguiente:
+
+mysql> CREATE TABLE usuario(
+    -> idusuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> nombre VARCHAR(50) NOT NULL,
+    -> apellidos VARCHAR(50) NOT NULL,
+    -> edad INT NOT NULL,
+    -> telefono BIGINT NOT NULL
+    -> );
+
+-----------------------------------------------------------------------------------------
+
+Para insertar registros sería:
+
+1ra forma:
+
+-> INSERT INTO usuario VALUES (NULL, 'Abi', 'Delgado Salmeron', 28, 7571251798);
+-> INSERT INTO usuario VALUES (NULL, 'Ana', 'Ortega Luna', 25, 7571063990);
+
+2da forma:
+
+-> INSERT INTO usuario(nombre, apellidos, edad, telefono) VALUES ('Abi', 'Delgado Salmeorn', 28, 7571002850);
+-> INSERT INTO usuario(nombre, apellidos, edad, telefono) VALUES ('Eva', 'Luna Diaz', 7571012755);

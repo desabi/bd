@@ -1,0 +1,10 @@
+
+a) datos
+b) consultas
+c) funciones
+d) vistas (views)
+e) transacciones (transactions)
+f) procedimientos almacenados (stored procedures)  
+g) disparadores (triggers)
+h) eventos (events)
+i) relaciones

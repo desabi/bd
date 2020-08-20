@@ -1,0 +1,6 @@
+
+system
+desabi
+boh93-RZ
+
+URL de Oracle Enterprise Manager Database Express: https://localhost:5500/em

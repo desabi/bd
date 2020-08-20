@@ -1,0 +1,14 @@
+En la consola escribir: 
+
+SET lc_time_names = 'es_ES';
+SET lc_time_names = 'es_MX';
+
+---------------------------------------------
+es_AR: Spanish - Argentina   ||  es_BO: Spanish - Bolivia
+es_CL: Spanish - Chile       ||  es_CO: Spanish - Columbia
+es_CR: Spanish - Costa Rica  ||  es_DO: Spanish - Dominican Republic
+es_EC: Spanish - Ecuador     ||  es_ES: Spanish - Spain
+es_GT: Spanish - Guatemala   ||  es_HN: Spanish - Honduras
+es_MX: Spanish - Mexico      ||  es_NI: Spanish - Nicaragua
+es_PA: Spanish - Panama      ||  es_PE: Spanish - Peru
+es_PR: Spanish - Puerto Rico ||  es_PY: Spanish - Paraguay

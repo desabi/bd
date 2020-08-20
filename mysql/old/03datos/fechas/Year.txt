@@ -1,0 +1,14 @@
+
+
+ Year: Año
+ Formato: YYYY
+
+ ejemplos: 2006 -> año 2006
+ 	   2012 -> año 2012
+
+ 
+ alumno:
+ idalumno
+ nombre
+ ingreso
+ egreso

@@ -1,0 +1,21 @@
+
+------------------------------------------------------------------------- 
+LENGUAJE DE MANIPULACIÓN DE DATOS [LMD] - Data Manipulation Language [DML]
+-------------------------------------------------------------------------
+
+   Se encarga de manipular los datos de la base de datos: realizar consultas, inserciones, modificaciones y eliminaciones. 
+
+   SELECT
+   INSERT
+   UPDATE
+   DELETE
+
+-------------------------------------------------------------------------
+LENGUAJE DE DEFINICIÓN DE DATOS [LDD] - Data Definition Language [DDL]
+-------------------------------------------------------------------------
+
+  Se encarga de la modificación de la estructura de los objetos (bases y tablas) de la base de datos.
+
+  CREATE
+  ALTER
+  DROP

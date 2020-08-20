@@ -1,0 +1,31 @@
+
+NOTAS:
+---------------------
+
+ * si el dato es texto, se coloca entre comillas. -> "nombre"
+
+ * si el dato es numero, se coloca sin comillas. -> 89
+
+
+1ra FORMA
+-------------------------
+
+ # insertar registros en la tabla
+ INSERT INTO tabla (columna1, columna2, columna3) VALUES (dato1, dato2, dato3);
+
+ # ejemplo
+ INSERT INTO alumno (nombre, edad, telefono) VALUES ("Hugo", 24, 7571003990);
+
+
+
+2da FORMA
+------------------------
+ 
+ # insertar registros en la tabla
+ INSERT INTO tabla VALUES (dato, dato2, dato3);
+
+ # ejemplo
+ INSERT INTO alumno VALUES ("Hugo", 24, 7571003990);
+
+
+

@@ -1,0 +1,9 @@
+
+ # eliminar un registro
+ DELETE FROM tabla WHERE columna=dato;
+
+ # eliminar registro/s
+ DELETE FROM tabla WHERE columna<=dato;
+
+ # eliminar registros/s
+  DELETE FROM tabla WHERE columna>=dato;

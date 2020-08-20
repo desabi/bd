@@ -1,0 +1,49 @@
+
+Dos operadores: % y _
+
+----------------------------------------------------
+ 1 mostrar los registros que empiezen con text
+
+ SELECT * FROM TABLA WHERE columna LIKE 'text%'; 
+
+ # ejemplo
+ # seleccionar todos los tados de una tabla
+ # donde los nombres comienzen con la letra: a
+
+ SELECT * FROM tabla WHERE nombre LIKE 'a%';
+
+---------------------------------------------------
+
+ 2 mostrar registros que tengan la palabra ex
+ SELECT * FROM tabla WHERE columna LIKE '%ex%';
+
+ # ejemplo
+ # seleccionar todos los datos de una tabla
+ # donde las ciudades contengan la palabra: la
+
+ SELECT * FROM tabla WHERE columna LIKE '%la%';
+
+---------------------------------------------------
+ 3 mostrar registros que terminen en end
+ 
+ SELECT * FROM tabla WHERE columna LIKE '%end'; 
+
+ # ejemplo
+ # seleccionar todos los datos de una tabla
+ # donde las colonias terminen con la letra: o
+
+ SELECT * FROM tabla WHERE colonia LIKE '%o';
+
+---------------------------------------------------
+
+ # mostrar registros que tengan en alguna parte
+ # de la clumna la letra e y que termine en e
+ SELECT * FROM TABLA WHERE campo LIKE '%e%'e; 
+
+
+-------------------------------------------------------------------
+
+ Existe otro operador el guion bajo _
+
+
+ 

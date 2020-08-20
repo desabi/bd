@@ -1,0 +1,18 @@
+
+**************************************************
+>>>>> VER LAS TABLAS DE TODOS LOS USUARIOS
+**************************************************
+ SELECT owner, table_name from all_tables;
+
+
+**************************************************
+>>>>> VER LAS TABLAS DEL USUARIO HR
+**************************************************
+
+select owner, table_name FROM all_tables where owner='HR';
+
+**************************************************
+>>>>> MOSTRAR LAS TABLAS DEL USUARIO CON EL QUE INICIAMOS SESION
+**************************************************
+
+SELECT table_name FROM user_tables;

@@ -1,0 +1,6 @@
+Que los alumnos busquen ejemplos de las siguientes funciones:
+
+a) REVERSE
+B) LOWER
+C) UPPER
+D) REPEAT

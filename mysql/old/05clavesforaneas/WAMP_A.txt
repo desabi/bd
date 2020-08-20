@@ -1,0 +1,8 @@
+
+Se crearon las tablas y luego se creo la relacion:
+
+
+ALTER TABLE  `direccion` 
+ADD FOREIGN KEY (  `alumno_idalumno` ) 
+REFERENCES  `test`.`alumno` (`idalumno`) 
+ON DELETE CASCADE ON UPDATE CASCADE ;

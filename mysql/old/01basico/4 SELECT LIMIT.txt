@@ -1,0 +1,11 @@
+ 
+ # muestra los cuatro primeros registros de una tabla
+ SELECT * FROM tabla LIMIT 4; 
+
+
+ # mostrar un numero especifico de registros
+ SELECT * FROM tabla LIMIT 3, 5;
+
+ * 3: inicio
+ * 5: cantidad de registros a mostrar
+ 

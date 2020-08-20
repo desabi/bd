@@ -1,0 +1,7 @@
+
+decimales_01
+
+ entero_decimal DECIMAL(M,D) NOT NULL UNSIGNED
+
+
+DECIMAL es sinonimo de DEC, NUMERIC, FIXED

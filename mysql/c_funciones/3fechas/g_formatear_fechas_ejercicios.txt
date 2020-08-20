@@ -1,0 +1,19 @@
+
+ Ejercicios de formateo con fechas.
+ Hacer las consultas que muestren las siguientes fechas
+
+ a) 10-11-2017
+ b) 23-08-2017
+ c) 12/06/2016
+ d) 04/2017
+ e) 2016/06
+ f) 15-Nov-2017
+ g) 22-ENE-17
+ h) 05-FEBRERO-2017 
+ I) 30/Marzo/2017
+ j) Abril 30 2017
+ k) Lunes 13 de Febrero del 2017
+ l) Enero 5 del 2017
+ m) Viernes 12 de Enero
+ o) Mayo 05
+ p) Junio 09 del 2017

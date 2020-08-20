@@ -1,0 +1,22 @@
+
+
+**********************************************************
+>>>>> INSERTAR DATOS EN LA TABLA persona
+**********************************************************
+
+SQL> INSERT INTO persona VALUES (1, 'abids');
+SQL> INSERT INTO persona VALUES (2, 'Bianca');
+SQL> INSERT INTO persona VALUES (3, 'Candido');
+
+
+**********************************************************
+>>>>> VER LOS DATOS DE LA TABLA
+**********************************************************
+
+SQL> select * from persona;
+
+        ID NOMBRE
+---------- -------------------------
+         1 abids
+         2 Bianca
+         3 Candido

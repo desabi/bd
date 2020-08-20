@@ -1,0 +1,16 @@
+
+Crear la tabla siguiente e insertar los ids manualmente:
+
+mysql> CREATE table usuario(
+    -> idusuario INT NOT NULL,
+    -> nombre VARCHAR(50) NOT NULL,
+    -> apellidos VARCHAR(50) NOT NULL,
+    -> edad INT NOT NULL,
+    -> telefono BIGINT NOT NULL
+    -> );
+
+insertar 3 registros y borrar la tabla
+
+INSERT INTO usuario VALUES (1, "abi", "ds", "29", 7571251798);
+INSERT INTO usuario VALUES (2, "bianca", "gh", "24", 7571001025);
+INSERT INTO usuario VALUES (3, "Carlos", "fd", "29", 757111768);

@@ -1,0 +1,40 @@
+
+---------------------------------
+ OPERADORES RELACIONALES {OPRE}
+---------------------------------
+
+   igual que            =
+   mayor que            > 
+   menor que            < 
+   mayor o igual que    >= 
+   menor o igual que    <= 
+   Diferente de         != 
+
+
+---------------------------------
+ OPERADORES LÓGICOS [OPLO]
+---------------------------------
+
+   Y            AND
+   O            OR
+   Negacion     NOT
+
+---------------------------------------------------
+
+ # seleccionar los registro que cumplan la condicion
+ # columna {OPRE} dato
+
+ SELECT * FROM tabla WHERE columna {OPRE} dato;
+
+ 
+ # seleccionar los registros que cumplan la condicion 
+ SELECT * FROM tabla WHERE columna {OPRE} dato [OPLO] columna {OPRE} dato
+ 
+
+-----------------------------------------------------
+BETWEEN 
+-----------------------------------------------------
+
+ # Mostrar los registros de un determinado rango
+
+ SELECT * FROM tabla WHERE campo BETWEEN 170 AND 300; 

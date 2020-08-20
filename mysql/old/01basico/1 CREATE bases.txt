@@ -1,0 +1,12 @@
+
+ # creat base de datos
+ CREATE DATABASE base;
+
+ # usar/seleccionar base de datos
+ USE DATABASE base;
+
+ # eliminar base de datos
+ DROP DATABASE base;
+
+
+ 

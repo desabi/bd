@@ -1,0 +1,78 @@
+
+------------------------------------------------------------------------------
+mysql> CREATE TABLE persona (
+    -> idpersona INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> nombre VARCHAR(45) NOT NULL,
+    -> edad INT NOT NULL,
+    -> celular BIGINT(10) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.10 sec)
+
+------------------------------------------------------------------------------
+
+mysql> CREATE TABLE direccion(
+    -> persona_idpersona INT NOT NULL,
+    -> calle VARCHAR(45) NOT NULL,
+    -> colonia VARCHAR(45) NOT NULL,
+    -> ciudad VARCHAR(45) NOT NULL,
+    -> INDEX (persona_idpersona),
+    -> FOREIGN KEY (persona_idpersona)
+    -> REFERENCES persona(idpersona)
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+------------------------------------------------------------------------------
+
+INSERTAR DATOS EN LA 1RA TABLA
+
+mysql> INSERT INTO persona VALUES (NULL, 'Abi', 29, 7571251798);
+Query OK, 1 row affected (0.01 sec)
+
+------------------------------------------------------------------------------
+
+INSTRUCCION PARA OBTENER EL ULTIMO id GENERADO
+
+last_insert_id()
+
+------------------------------------------------------------------------------
+
+INSERTAR DATOS EN LA 2DA TABLA
+
+mysql> INSERT INTO direccion VALUES (LAST_INSERT_ID(), 'pensador mexicano', 'Tepeyac', 'Tlapa');
+Query OK, 1 row affected (0.01 sec)
+
+------------------------------------------------------------------------------
+
+SELECCIONAR REGISTRO DE DOS TABLAS
+
+mysql> SELECT nombre, calle, colonia FROM persona, direccion WHERE idpersona=persona_idpersona;
++--------+-------------------+---------+
+| nombre | calle             | colonia |
++--------+-------------------+---------+
+| Abi    | pensador mexicano | Tepeyac |
++--------+-------------------+---------+
+1 row in set (0.00 sec)
+
+------------------------------------------------------------------------------
+
+mysql> SELECT nombre, edad, calle, colonia FROM persona, direccion WHERE idpersona=persona_idpersona;
++--------+------+-------------------+---------+
+| nombre | edad | calle             | colonia |
++--------+------+-------------------+---------+
+| Abi    |   29 | pensador mexicano | Tepeyac |
+| Eva    |   23 | Morelos           | Centro  |
++--------+------+-------------------+---------+
+2 rows in set (0.00 sec)
+
+------------------------------------------------------------------------------
+
+mysql> SELECT * FROM persona, direccion WHERE idpersona=persona_idpersona;
++-----------+--------+------+------------+-------------------+-------------------+---------+--------+
+| idpersona | nombre | edad | celular    | persona_idpersona | calle             | colonia | ciudad |
++-----------+--------+------+------------+-------------------+-------------------+---------+--------+
+|         1 | Abi    |   29 | 7571251798 |                 1 | pensador mexicano | Tepeyac | Tlapa  |
+|         2 | Eva    |   23 | 7571002850 |                 2 | Morelos           | Centro  | Tlapa  |
++-----------+--------+------+------------+-------------------+-------------------+---------+--------+
+2 rows in set (0.00 sec)
+
+------------------------------------------------------------------------------

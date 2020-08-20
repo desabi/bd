@@ -1,0 +1,35 @@
+
+ # ver tablas
+ SHOW DATABASES;
+
+ # crear tabla ejemplo 1
+ CREATE TABLE tabla(
+     columna1 VARCHAR(25),
+     columna2 INT,
+     columna3 DOUBLE,
+  );
+
+
+ # crear table ejemplo 2
+ CREATE table tabla(
+     columna1 INT NOT NULL,
+     columna2 BIGINT NOT NULL,
+     columna3 VARCHAR(45) NOT NULL,
+     columna4 DOUBLE NOT NULL, 
+ );
+
+
+ # crear tabla ejemplo 3
+ CREATE TABLE tabla(
+     columna1 INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+     columna2 VARCHAR(38) NOT NULL,
+     columna3 DOUBLE NOT NULL,
+     columna4 BIGINT NOT NULL,
+     columna5 CHAR NOT NULL
+ );
+
+ # describir columnas de la tabla
+ DESCRIBE tabla;
+
+ # borrar una tabla
+ DROP TABLE tabla;

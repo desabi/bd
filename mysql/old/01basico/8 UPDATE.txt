@@ -1,0 +1,6 @@
+
+ # actualizar/modificar un dato
+ UPDATE tabla SET columna=nuevodato WHERE columnax=datox;
+
+ # actualizar/modificar dos datos
+ UPDATE tabla SET columna1=nuevodato, columna2=nuevodato WHERE columnax=datox;

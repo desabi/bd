@@ -1,0 +1,39 @@
+
+ # mostrar todos los registros de una tabla y 
+ # ordenarlos conforme a la columna especificada
+
+ SELECT * FROM tabla ORDER BY columna
+
+
+ # mostrar todos los registros de una tabla y
+ # ordenarlos de manera ASCENDENTE conforme a la columna especificada
+
+ SELECT * FROM tabla ORDER BY columna ASC;
+
+
+ # mostrar todos los registros de una tabla y
+ # ordenarlos de manera DESCENDENTE conforme a la columna especificado 
+
+ SELECT * FROM tabla ORDER BY columna DES;
+
+
+-----------------------------------------------
+TEXTO
+-----------------------------------------------
+ A-Z:
+ SELECT * FROM libro ORDER BY autor; 
+ SELECT * FROM libro ORDER BY autor ASC;
+ 
+ Z-A:
+ SELECT * FROM libro ORDER BY autor DESC;
+
+
+----------------------------------------------
+NUMEROS
+---------------------------------------------
+ mayor - menor
+ SELECT * FROM libro ORDER by precio DESC;
+
+ menor - mayor
+ SELECT * FROM libro ORDER by precio;
+ SELECT * FROM libro ORDER by precio ASC;

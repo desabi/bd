@@ -1,0 +1,33 @@
+
+*************************************************************
+>>>>> AGREGAR LA COLUMNA edad A LA TABLA PERSONA
+*************************************************************
+
+SQL> ALTER TABLE persona ADD (edad NUMBER(2) );
+
+Table altered.
+
+
+*************************************************************
+>>>> DESCRIBIR LA TABLA PARA VER SI SE AGREGO LA COLUMNA edad
+*************************************************************
+
+SQL> describe persona
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(3)
+ NOMBRE                                             VARCHAR2(25)
+ EDAD                                               NUMBER(2)
+
+
+*************************************************************
+>>>>> MOSTRAR TODOS LOS REGISTROS DE LA TABLA persona 
+*************************************************************
+SQL> select * from persona;
+
+        ID NOMBRE                          EDAD
+---------- ------------------------- ----------
+         1 abids
+         2 Bianca
+         3 Candido

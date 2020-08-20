@@ -1,0 +1,6 @@
+
+-> Primero debemos entrar/conectarnos con el usuario system
+
+   SQL> ALTER USER HR IDENTIFIED BY abids;
+
+   User altered.

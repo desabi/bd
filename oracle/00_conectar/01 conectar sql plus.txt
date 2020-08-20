@@ -1,0 +1,11 @@
+
+Escribir: conn
+
+Escribir el usuario: system
+Escribir la contraseña: contraseña que especificamos al instalar
+
+ó
+
+Escribir el usuaro: HR
+Escribir la contraseña: abids (o la que hayamos especificado)
+

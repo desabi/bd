@@ -1,0 +1,6 @@
+
+ # borrar base de datos
+ DROP DATABASE base;
+
+ # borrar tabla
+ DROP TABLE tabla;

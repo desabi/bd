@@ -1,0 +1,3 @@
+
+ DATETIME: fecha y hora
+ Formato: AAAA-MM-DD HH:MM:SS

@@ -1,0 +1,10 @@
+en sql developer crear una conexión con system
+
+Primero editar el usuario hr y establecer la contraseña
+
+
+ejecutar las siguientes consultas:
+
+select username,password,account_status from dba_users;
+
+alter user HR account unlock;

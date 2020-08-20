@@ -1,0 +1,24 @@
+# entrear a mysql
+mysql -h hostname -u username -p
+
+mysql -h localhost -u root -p
+________________________________________________________
+mysql> UPDATE user SET password=PASSWORD('bdabi') WHERE user='root';
+* cerrar y volver a abrir wamp o mysql
+
+mysql> update user set password=PASSWORD('abibd') WHERE user='root';
+Query OK, 3 rows affected (0.44 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+_______________________________________________________
+
+config.inc.php
+
+$cfg['Servers'][$i]['password'] = 'bdabi';
+
+---------------------------------------------------------------------------
+
+Hola, para que te pida nombre de usuario y contraseña, localiza la siguiente linea en el config.inc:
+Código PHP:
+
+$cfg['Servers'][$i]['auth_type']     = 'config'; 
+/*Y Reemplaza config por http*/ 

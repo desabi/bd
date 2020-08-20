@@ -1,0 +1,12 @@
+idpedido,cliente_idcliente,producto,precio,cantidad
+1,1,"Memoria USB",150.00,3
+2,1,DVD,10.00,5
+3,2,Lapiz,7.00,12
+4,2,Borrador,8.00,4
+5,2,Marcador,35.00,2
+6,2,Lapicero,9.00,1
+7,3,Agua,6.00,2
+8,3,Refresco,12.00,1
+9,3,Chicle,3.00,5
+10,3,Jugo,9.00,6
+11,3,Galleta,13.00,3

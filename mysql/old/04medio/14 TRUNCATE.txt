@@ -1,0 +1,6 @@
+
+mysql> TRUNCATE equipo;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SELECT * FROM equipo;
+Empty set (0.00 sec)

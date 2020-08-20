@@ -1,0 +1,7 @@
+/*
+-- Query: SELECT * FROM tipos_datos.enteros_a
+LIMIT 0, 1000
+
+-- Date: 2017-01-21 08:17
+*/
+INSERT INTO enteros_b VALUES (30123,8123456,2123456789,9123456789123456789);

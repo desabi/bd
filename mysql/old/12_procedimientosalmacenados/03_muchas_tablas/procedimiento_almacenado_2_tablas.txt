@@ -1,0 +1,22 @@
+
+DELIMITER //
+
+CREATE PROCEDURE insertar_persona_e_informacion(
+    IN `p_persona_nombre` VARCHAR(45),
+    IN `p_informacion_edad` INT,
+    IN `p_informacion_estatura` DECIMAL(3,2)
+)
+
+BEGIN
+
+    DECLARE idGenerado INT UNSIGNED DEFAULT 0;
+
+    INSERT INTO persona VALUES (NULL, p_persona_nombre);
+
+    set idGenerado = last_insert_id();
+
+    INSERT INTO informacion VALUES (p_informacion_edad, p_informacion_estatura, idGenerado);
+
+END
+
+//

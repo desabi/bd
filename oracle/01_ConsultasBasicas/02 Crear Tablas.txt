@@ -1,0 +1,18 @@
+
+**********************************************************
+>>>>> Entrar como usuario SYSTEM y ejecutar las siguiente sentencia;
+**********************************************************
+
+SQL> CREATE TABLE persona(
+  2  id number(3),
+  3  nombre varchar2(25) );
+
+**********************************************************
+>>>>> [OPCIONAL]: DESCRIBIR LA TABLA persona
+**********************************************************
+
+ SQL> describe persona;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(3)
+ NOMBRE                                             VARCHAR2(25)

@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------
+AGREGAR LA CLAVE FORANEA
+---------------------------------------------------------------------------------
+   -> ...
+   -> dato VARCHAR(30) NOT NULL,
+   -> PRIMARY KEY (idventa),
+   -> INDEX (idcliente), 
+   -> FOREIGN KEY (idcliente) REFERENCES cliente(id)
+)

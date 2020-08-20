@@ -1,0 +1,18 @@
+
+CAMBIAR EL NOMBRE DE UNA TABLA
+
+RENAME TABLE nombreTabla TO nombreNuevo
+
+--------------------------------------------------
+
+mysql> RENAME TABLE empleado TO trabajador;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_manual |
++------------------+
+| equipo           |
+| trabajador       |
++------------------+
+2 rows in set (0.00 sec)

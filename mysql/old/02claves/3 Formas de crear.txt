@@ -1,0 +1,22 @@
+
+---------------------------------------------------------------------------------
+AGREGAR LA CLAVE PRIMARIA EN LA MISMA LINEA DEL CAMPO:
+---------------------------------------------------------------------------------
+
+1ra opcion:
+
+   -> idcampo INT NOT NULL PRIMARY KEY,
+
+2da opcion:
+
+   -> idcampo INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+
+---------------------------------------------------------------------------------
+AGREGAR LA CLAVE PRIMARIA EN LA ULTIMA LINEA
+---------------------------------------------------------------------------------
+
+    -> ...
+    -> dato VARCHAR (50) NOT NULL,
+    -> PRIMARY KEY (idcampo) 
+);

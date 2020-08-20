@@ -1,0 +1,21 @@
+
+ TIME: horas: 
+ Formato: HH:MM:SS
+
+ ejemplos: '7:10'     -> 7:10:00
+           '12:31'    -> 12:31:00
+           '11:10:23' -> 12:10:23
+
+	   '103000'   -> 10:30:00
+	   '013000'   -> 01:30:00
+	   '0130'     -> 00:01:30
+           * se tienen que agregar los ceros
+
+	    083245    -> 08:32:45
+            113758    -> 11:37:58
+
+Trabajador:
+idtrabajdor
+nombre
+entrada
+salida

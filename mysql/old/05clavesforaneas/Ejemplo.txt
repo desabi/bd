@@ -1,0 +1,22 @@
+
+CREATE TABLE persona (
+    idpersona INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(45) NOT NULL,
+    edad INT NOT NULL,
+    celular BIGINT(10) NOT NULL
+);
+
+
+CREATE TABLE direccion (
+    iddireccion INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    calle VARCHAR(45) NOT NULL,
+    colonia VARCHAR(45) NOT NULL,
+    ciudad VARCHAR(45) NOT NULL,
+    persona_idpersona INT NOT NULL,
+    CONSTRAINT 'fk_direccion_alumno'
+      FOREIGN KEY ('persona_idpersona')
+      REFERENCES persona('idpersona')
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+);
+    

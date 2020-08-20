@@ -1,0 +1,104 @@
+
+-----------------------------------------------------------
+CREAR TABLA
+COLOCAR UN VALOR POR DEFECTO A UN CAMPO 
+-----------------------------------------------------------
+
+mysql> CREATE TABLE equipo (
+    -> idequipo INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    -> nombre VARCHAR(50) NOT NULL,
+    -> patrocinador VARCHAR(50) NOT NULL,
+    -> jugadores INT DEFAULT 11
+    -> );
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> DESCRIBE equipo;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| idequipo     | int(11)     | NO   | PRI | NULL    | auto_increment |
+| nombre       | varchar(50) | NO   |     | NULL    |                |
+| patrocinador | varchar(50) | NO   |     | NULL    |                |
+| jugadores    | int(11)     | YES  |     | 11      |                |
++--------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+
+-----------------------------------------------------------
+INSERTAR UN REGISTRO CON UN VALOR POR DEFECTO
+-----------------------------------------------------------
+
+mysql> INSERT INTO equipo VALUES (NULL, "Cruz Azul", "Apasco", DEFAULT);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM equipo;
++----------+-----------+--------------+-----------+
+| idequipo | nombre    | patrocinador | jugadores |
++----------+-----------+--------------+-----------+
+|        1 | Cruz Azul | Apasco       |        11 |
++----------+-----------+--------------+-----------+
+1 row in set (0.00 sec)
+
+
+mysql> INSERT INTO equipo VALUES (NULL, "America", "Bimbo", 22);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from equipo;
++----------+-----------+--------------+-----------+
+| idequipo | nombre    | patrocinador | jugadores |
++----------+-----------+--------------+-----------+
+|        1 | Cruz Azul | Apasco       |        11 |
+|        2 | America   | Bimbo        |        22 |
++----------+-----------+--------------+-----------+
+2 rows in set (0.00 sec)
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+OTRO EJEMPLO
+
+
+mysql> CREATE TABLE empleado(
+    -> idempleado INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    -> nombre VARCHAR(50) NOT NULL,
+    -> edad INT NOT NULL,
+    -> extranjero VARCHAR(2) DEFAULT 'No'
+    -> );
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> DESCRIBE empleado;
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| idempleado | int(11)     | NO   | PRI | NULL    | auto_increment |
+| nombre     | varchar(50) | NO   |     | NULL    |                |
+| edad       | int(11)     | NO   |     | NULL    |                |
+| extranjero | varchar(2)  | YES  |     | No      |                |
++------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+INSERTAR REGISTRO CON UN VALOR POR DEFECTO
+
+mysql> INSERT INTO empleado VALUES (NULL, "Ana", 23, DEFAULT);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM empleado;
++------------+--------+------+------------+
+| idempleado | nombre | edad | extranjero |
++------------+--------+------+------------+
+|          1 | Ana    |   23 | No         |
++------------+--------+------+------------+
+1 row in set (0.00 sec)
+
+
+mysql> INSERT INTO empleado VALUES (NULL, "Vicente", 19, 'Si');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM empleado;
++------------+---------+------+------------+
+| idempleado | nombre  | edad | extranjero |
++------------+---------+------+------------+
+|          1 | Ana     |   23 | No         |
+|          2 | Vicente |   19 | Si         |
++------------+---------+------+------------+
+2 rows in set (0.00 sec)

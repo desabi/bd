@@ -1,0 +1,24 @@
+
+              COMBINAR CONSULTAS
+
+ SELECT 
+    a) campo/campos
+    b) AVG, COUNT, DISTINCT, MAX, MIN, SUM
+
+ FROM tabla
+
+ WHERE campo
+    a) <, <=, >, >=, ==, !=
+    b) AND, OR, NOT
+    c) LIKE
+    d) BETWEEN
+
+ ORDER BY campo
+    a) ASC
+    b) DESC
+
+ LIMIT 
+    a) total
+    b) inicio, total
+
+ 

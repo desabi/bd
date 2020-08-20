@@ -1,0 +1,42 @@
+
+ Exportar
+   mysqldump -u [username] -p [database_name] > [dumpfilename.sql]
+   mysqldump -u root -p nombrebd > baserespaldo.sql
+
+ Importar
+   mysql -u [username] -p [database_name] < [dumpfilename.sql]
+   mysql -u root -p nombrebase < baserespaldo.sql
+
+-------------------------------------------------------------------------------
+
+ backup: 
+   mysqldump -u root -p[root_password] [database_name] > [dumpfilename.sql]
+   mysqldumo -u root -p bdraiz nombrebase > baserespaldo.sql
+
+ restore:
+   mysql -u root -p[root_password] [database_name] < [dumpfilename.sql]
+   mysql -u root -p bdraiz nombrebase < baserespaldo.sql
+
+------------------------------------------------------------------------------
+
+ Respaldo de una sola base de datos completa
+    mysqldump clientes > clientes.sql 
+
+ Respaldo de una sola base de datos con dos tablas
+   mysqldump clientes saldos facturas > clientes.sql 
+
+ Respaldo completo de base de datos clientes y ventas
+   mysqldump --databases clientes ventas > respaldo_cli_ven_sep_2011.sql
+
+-----------------------------------------------------------------------
+
+ Backup a specific table:
+ In this example, we backup only the accounts_contacts table from sugarcrm database:
+
+  mysqldump -u root -ptmppassword sugarcrm accounts_contacts > sugarcrm_accounts_contacts.sql
+
+ Backup multiple databases:
+   mysqldump -u root -ptmppassword --databases bugs sugarcrm > bugs_sugarcrm.sql
+
+ Backup all the databases:
+   mysqldump -u root -ptmppassword --all-databases > /tmp/all-database.sql

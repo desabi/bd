@@ -1,0 +1,34 @@
+
+SELECCIONAR / MOSTRAR / VISUALIZAR DATOS DE UNA TABLA
+------------------------------------------------------
+
+ # seleccionar ordenadamente los datos de una tabla
+ SELECT columna1, columna2, columna3 FROM tabla;
+ 
+ # seleccionar desordenadamente los datos de una tabla
+ SELECT columna3, columna1, columna2 FROM tabla;
+
+ # seleccionar todos los datos de una tabla
+ SELECT * FROM tabla;
+ 
+
+OPERACIONES SOBRE LOS DATOS DE UNA TABLA (FUNCIONES 1)
+------------------------------------------------------
+
+ # contar los datos que tiene una columna
+ SELECT COUNT (columna) FROM tabla; 
+
+ # seleccionar el maximo dato de una columna
+ SELECT MAX (columna) FROM tabla;
+
+ # seleccionar el minimo dato de una columna
+ SELECT MIN (columna) FROM tabla;
+
+ # mostrar os datos de una columna sin que se repitan
+ SELECT DISTINCT(campo) FROM tabla;
+
+ # sumar los datos de una columna 
+ SELECT SUM(columna) FROM tabla;
+
+ # calcular el promedio de los datos de una columna
+ SELECT AVG(columna) FROM tabla; 
